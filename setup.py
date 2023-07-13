@@ -27,7 +27,7 @@ setup(
         'numpy',
         'opencv-contrib-python',
         'opencv-python',
-        'tensorflow==1.13.1',
+        'tensorflow',
         'torch==1.1.0',
         'torchvision==0.3.0',
         'tqdm==4.45.0',
