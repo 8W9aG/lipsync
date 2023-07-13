@@ -26,7 +26,7 @@ setup(
         'librosa',
         'numpy',
         'opencv-contrib-python',
-        'opencv-python==4.1.0.25',
+        'opencv-python',
         'tensorflow==1.13.1',
         'torch==1.1.0',
         'torchvision==0.3.0',
