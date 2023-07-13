@@ -25,7 +25,7 @@ setup(
     install_requires=[
         'librosa',
         'numpy',
-        'opencv-contrib-python==4.2.0.34',
+        'opencv-contrib-python',
         'opencv-python==4.1.0.25',
         'tensorflow==1.13.1',
         'torch==1.1.0',
