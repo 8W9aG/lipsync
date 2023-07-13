@@ -23,7 +23,7 @@ setup(
         "Operating System :: OS Independent",
     ],
     install_requires=[
-        'librosa==0.7.0',
+        'librosa',
         'numpy',
         'opencv-contrib-python==4.2.0.34',
         'opencv-python==4.1.0.25',
