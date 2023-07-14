@@ -29,7 +29,7 @@ setup(
         'opencv-python',
         'tensorflow',
         'torch',
-        'torchvision==0.3.0',
+        'torchvision',
         'tqdm==4.45.0',
         'numba==0.48',
         'moviepy'
