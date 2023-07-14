@@ -31,7 +31,7 @@ setup(
         'torch',
         'torchvision',
         'tqdm==4.45.0',
-        'numba==0.48',
+        'numba',
         'moviepy'
     ],
     zip_safe=False
