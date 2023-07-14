@@ -28,7 +28,7 @@ setup(
         'opencv-contrib-python',
         'opencv-python',
         'tensorflow',
-        'torch==1.1.0',
+        'torch',
         'torchvision==0.3.0',
         'tqdm==4.45.0',
         'numba==0.48',
