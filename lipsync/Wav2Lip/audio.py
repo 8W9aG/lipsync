@@ -159,8 +159,7 @@ def _linear_to_mel(spectogram):
 
 def _build_mel_basis():
     assert fmax <= sample_rate // 2
-    return librosa.filters.mel(sample_rate, n_fft, n_mels=num_mels,
-                               fmin=fmin, fmax=fmax)
+    return librosa.filters.mel(sr=sample_rate, n_fft=n_fft, n_mels=num_mels, fmin=fmin, fmax=fmax)
 
 def _amp_to_db(x):
     min_level = np.exp(min_level_db / 20 * np.log(10))
