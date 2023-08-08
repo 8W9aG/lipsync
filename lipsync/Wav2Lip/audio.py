@@ -90,7 +90,6 @@ def inv_preemphasis(wav, k, inv_preemphasize=True):
     return wav
 
 def get_hop_size():
-    hop_size = hop_size
     if hop_size is None:
         assert frame_shift_ms is not None
         hop_size = int(frame_shift_ms / 1000 * sample_rate)
