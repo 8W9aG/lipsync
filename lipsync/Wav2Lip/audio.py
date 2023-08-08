@@ -79,7 +79,7 @@ def save_wav(wav, path, sr):
 def save_wavenet_wav(wav, path, sr):
     librosa.output.write_wav(path, wav, sr=sr)
 
-def preemphasis(wav, k, preemphasize=True):
+def preemphasis_func(wav, k, preemphasize=True):
     if preemphasize:
         return signal.lfilter([1, -k], [1], wav)
     return wav
@@ -97,7 +97,7 @@ def get_hop_size():
     return hop_size
 
 def linearspectrogram(wav):
-    D = _stft(preemphasis(wav, preemphasis, preemphasize))
+    D = _stft(preemphasis_func(wav, preemphasis, preemphasize))
     S = _amp_to_db(np.abs(D)) - ref_level_db
     
     if signal_normalization:
@@ -105,7 +105,7 @@ def linearspectrogram(wav):
     return S
 
 def melspectrogram(wav):
-    D = _stft(preemphasis(wav, preemphasis, preemphasize))
+    D = _stft(preemphasis_func(wav, preemphasis, preemphasize))
     S = _amp_to_db(_linear_to_mel(np.abs(D))) - ref_level_db
     
     if signal_normalization:
